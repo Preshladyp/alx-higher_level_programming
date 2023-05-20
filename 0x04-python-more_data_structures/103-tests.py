@@ -1,3 +1,4 @@
+#include <Python.h>
 import ctypes
 
 lib = ctypes.CDLL('./libPython.so')
