@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-def simple_delete(a_dictionary, key=""):
-if a_dictionary.get(key) is not None:
-del a_dictionary[key]
-return (a_dictionary)
+
+
+def update_dictionary(a_dictionary, key, value):
+    """
+    updates or add key/value into a dictionary and returns a new copy
+    """
+    a_dictionary.update({key: value})
+    return (a_dictionary.copy())
